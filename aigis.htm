@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Geppaku">
+	<link rel="icon" href="favicon.ico">
+	<link rel="stylesheet" href="aigis.css">
+	<script src="aigis.js"></script>
+	<title>LINK Tools</title>
+	<!--　■■■■■　CSS　■■■■■　-->
+	<style type="text/css">
+		html, body, div, p, pre {
+			margin: 0;
+			padding: 0;
+			border: 0;
+			font-size: 100%;
+			font: inherit;
+			vertical-align: baseline;
+		}
+		html, body {
+			width: 100%;
+			height: 100%;
+		}
+		header {
+			top: 0;
+			display: flex;
+			z-index: 10;
+			position: sticky;
+			& button {
+				flex-grow: 1;
+			}
+		}
+		.l--full-width {
+			width: 100%;
+		}
+		.l--margin-tb--auto {
+			margin: auto 0;
+		}
+		.l--padding-lr--05rem {
+			padding: 0 0.5rem;
+		}
+		.l--text-align--center {
+			text-align: center;
+		}
+		.l--display--flex {
+			display: flex;
+		}
+		.l--flex-flow--column {
+			flex-flow: column;
+		}
+		.l--flex-wrap {
+			flex-wrap: wrap;
+		}
+		.l--justify-content--center {
+			justify-content: center;
+		}
+		.l--width--class-name {
+			width: 10rem;
+		}
+		.l--width--count {
+			width: 4rem;
+		}
+		.d--font-size--1rem {
+			font-size: 1rem;
+		}
+		.d--font-size--2rem {
+			font-size: 2rem;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+	</header>
+	<main class="l--display--flex l--flex-flow--column l--full-width">
+		<article>
+			<section class="l--display--flex l--full-width">
+				<div class="l--width--class-name">
+					<p>ソルジャー</p>
+				</div>
+				<div class="l--display--flex">
+					<button>−</button>
+					<input type="number" min=0 class="l--width--count">
+					<button>＋</button>
+				</div>
+			</section>
+			<section class="l--display--flex l--full-width">
+				<div class="l--width--class-name">
+					<p>ヘビーアーマー</p>
+				</div>
+				<div class="l--display--flex">
+					<button>−</button>
+					<input type="number" min=0 class="l--width--count">
+					<button>＋</button>
+				</div>
+			</section>
+			<section class="l--display--flex l--full-width">
+				<div class="l--width--class-name">
+					<p>ワルキューレ</p>
+				</div>
+				<div class="l--display--flex">
+					<button>−</button>
+					<input type="number" min=0 class="l--width--count">
+					<button>＋</button>
+				</div>
+			</section>
+			<section class="l--display--flex l--full-width">
+				<div class="l--width--class-name">
+					<p>ローグ</p>
+				</div>
+				<div class="l--display--flex">
+					<button>−</button>
+					<input type="number" min=0 class="l--width--count">
+					<button>＋</button>
+				</div>
+			</section>
+			<section class="l--display--flex l--full-width">
+				<div class="l--width--class-name">
+					<p>バンデット</p>
+				</div>
+				<div class="l--display--flex">
+					<button>−</button>
+					<input type="number" min=0 class="l--width--count">
+					<button>＋</button>
+				</div>
+			</section>
+			<section class="l--display--flex l--full-width">
+				<div class="l--width--class-name">
+					<p>中級竜兵</p>
+				</div>
+				<div class="l--display--flex">
+					<button>−</button>
+					<input type="number" min=0 class="l--width--count">
+					<button>＋</button>
+				</div>
+			</section>
+			<section class="l--display--flex l--full-width">
+				<div class="l--width--class-name">
+					<p>サムライ</p>
+				</div>
+				<div class="l--display--flex">
+					<button>−</button>
+					<input type="number" min=0 class="l--width--count">
+					<button>＋</button>
+				</div>
+			</section>
+			<section class="l--display--flex l--full-width">
+				<div class="l--width--class-name">
+					<p>忍者</p>
+				</div>
+				<div class="l--display--flex">
+					<button>−</button>
+					<input type="number" min=0 class="l--width--count">
+					<button>＋</button>
+				</div>
+			</section>
+			<section class="l--display--flex l--full-width">
+				<div class="l--width--class-name">
+					<p>モンク</p>
+				</div>
+				<div class="l--display--flex">
+					<button>−</button>
+					<input type="number" min=0 class="l--width--count">
+					<button>＋</button>
+				</div>
+			</section>
+			<section class="l--display--flex l--full-width">
+				<div class="l--width--class-name">
+					<p>魔法剣士</p>
+				</div>
+				<div class="l--display--flex">
+					<button>−</button>
+					<input type="number" min=0 class="l--width--count">
+					<button>＋</button>
+				</div>
+			</section>
+			<section class="l--display--flex l--full-width">
+				<div class="l--width--class-name">
+					<p>エンジェル</p>
+				</div>
+				<div class="l--display--flex">
+					<button>−</button>
+					<input type="number" min=0 class="l--width--count">
+					<button>＋</button>
+				</div>
+			</section>
+			<section class="l--display--flex l--full-width">
+				<div class="l--width--class-name">
+					<p>神官戦士</p>
+				</div>
+				<div class="l--display--flex">
+					<button>−</button>
+					<input type="number" min=0 class="l--width--count">
+					<button>＋</button>
+				</div>
+			</section>
+			<hr>
+			<section class="l--display--flex l--full-width">
+				<div class="l--width--class-name">
+					<p>アーチャー</p>
+				</div>
+				<div class="l--display--flex">
+					<button>−</button>
+					<input type="number" min=0 class="l--width--count">
+					<button>＋</button>
+				</div>
+			</section>
+			<section class="l--display--flex l--full-width">
+				<div class="l--width--class-name">
+					<p>メイジ</p>
+				</div>
+				<div class="l--display--flex">
+					<button>−</button>
+					<input type="number" min=0 class="l--width--count">
+					<button>＋</button>
+				</div>
+			</section>
+			<section class="l--display--flex l--full-width">
+				<div class="l--width--class-name">
+					<p>ヒーラー</p>
+				</div>
+				<div class="l--display--flex">
+					<button>−</button>
+					<input type="number" min=0 class="l--width--count">
+					<button>＋</button>
+				</div>
+			</section>
+			<section class="l--display--flex l--full-width">
+				<div class="l--width--class-name">
+					<p>ウィッチ</p>
+				</div>
+				<div class="l--display--flex">
+					<button>−</button>
+					<input type="number" min=0 class="l--width--count">
+					<button>＋</button>
+				</div>
+			</section>
+			<section class="l--display--flex l--full-width">
+				<div class="l--width--class-name">
+					<p>パイレーツ</p>
+				</div>
+				<div class="l--display--flex">
+					<button>−</button>
+					<input type="number" min=0 class="l--width--count">
+					<button>＋</button>
+				</div>
+			</section>
+			<section class="l--display--flex l--full-width">
+				<div class="l--width--class-name">
+					<p>ヴァンパイアハンター</p>
+				</div>
+				<div class="l--display--flex">
+					<button>−</button>
+					<input type="number" min=0 class="l--width--count">
+					<button>＋</button>
+				</div>
+			</section>
+			<section class="l--display--flex l--full-width">
+				<div class="l--width--class-name">
+					<p>ビショップ</p>
+				</div>
+				<div class="l--display--flex">
+					<button>−</button>
+					<input type="number" min=0 class="l--width--count">
+					<button>＋</button>
+				</div>
+			</section>
+			<section class="l--display--flex l--full-width">
+				<div class="l--width--class-name">
+					<p>砲術士</p>
+				</div>
+				<div class="l--display--flex">
+					<button>−</button>
+					<input type="number" min=0 class="l--width--count">
+					<button>＋</button>
+				</div>
+			</section>
+		</article>
+	<!--　■■■■■　JavaScript　■■■■■　-->
+	<script type="text/javascript">
+	</script>
+</body>
+
+</html>
